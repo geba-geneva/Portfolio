@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpeedQueen Redesign — Case Study</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;700&family=MonteCarlo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+    <nav>
+      <div class="nav-name"><a href="index.html">Geneva Jacobson</a></div>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="container">
+    <div class="case-hero">
+      <p class="case-tag">UX Case Study · HCI</p>
+      <h1>Revamping<br>SpeedQueen</h1>
+      <p>A full-cycle redesign of the SpeedQueen laundry app used by Rutgers students — from user interviews and affinity mapping to hi-fi prototyping and usability testing.</p>
+      <div class="meta-row">
+        <div class="meta-item">
+          <label>Team</label>
+          <span>Brian, Isabella, Nate, Geneva</span>
+        </div>
+        <div class="meta-item">
+          <label>Methods</label>
+          <span>Interviews · Affinity Diagram · Personas · Prototyping · Usability Testing</span>
+        </div>
+        <div class="meta-item">
+          <label>Tools</label>
+          <span>Figma · Miro · TurboScribe</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">01 — Overview</p>
+      <h2>The App &<br>The Problem</h2>
+      <p>SpeedQueen is a mobile app that lets Rutgers on-campus students pay for and monitor laundry machines in their dorms. While convenient for going coin-free, the existing app had significant usability issues that frustrated everyday users.</p>
+      <p>Our team identified four key problem areas that drove the need for a redesign.</p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Navigation</h4>
+          <p>Confusing machine selection flow and unclear setup for first-time users.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Transactions</h4>
+          <p>No refund option, no custom reload, and a $10 minimum load requirement.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Feedback</h4>
+          <p>No push notifications when laundry finishes — users relied on personal timers.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Personalization</h4>
+          <p>Balances locked to one campus, no machine favorites, minimal customization.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">02 — Process</p>
+      <h2>Design Thinking<br>Framework</h2>
+      <p>We followed the five-stage design thinking process to ensure every decision was grounded in real user needs rather than assumptions.</p>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="ps-num">01</div>
+          <div class="ps-title">Empathize</div>
+          <div class="ps-desc">Semi-structured interviews with Rutgers students</div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">02</div>
+          <div class="ps-title">Define</div>
+          <div class="ps-desc">Affinity diagram to cluster pain points</div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">03</div>
+          <div class="ps-title">Ideate</div>
+          <div class="ps-desc">Personas, storyboards, and design sketches</div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">04</div>
+          <div class="ps-title">Prototype</div>
+          <div class="ps-desc">Wireframes, flowcharts, hi-fi Figma prototype</div>
+        </div>
+        <div class="process-step">
+          <div class="ps-num">05</div>
+          <div class="ps-title">Test</div>
+          <div class="ps-desc">In-person usability testing sessions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">03 — Empathize</p>
+      <h2>Listening to<br>Real Users</h2>
+      <p>We wrote a 30-question semi-structured interview script organized around five themes, then conducted 30-minute recorded sessions with Rutgers students. Recordings were transcribed using TurboScribe and pulled into raw quote data.</p>
+      <div class="pill-row">
+        <span class="pill">Initial Motivations</span>
+        <span class="pill">Usage Habits</span>
+        <span class="pill">Navigation</span>
+        <span class="pill">Personalization</span>
+        <span class="pill">Transactions</span>
+      </div>
+      <div class="quotes">
+        <div class="quote">"The thing that really let me down was just the fact that there was no notification saying that your laundry is done."</div>
+        <div class="quote">"I still have $1.25 in my account that I can do nothing about because I cannot transfer that money out."</div>
+        <div class="quote">"What encouraged me was that I wouldn't have to pay with coins."</div>
+        <div class="quote">"It was a slider that was a little annoying. I hate sliders."</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">04 — Define</p>
+      <h2>Synthesizing<br>the Data</h2>
+      <p>Interview notes were clustered into an affinity diagram, surfacing six major themes: lack of communication, user motivations, slider issues, transaction limitations, cached memory problems, and interaction habits.</p>
+      <div class="finding-list">
+        <div class="finding">
+          <div class="finding-num">01</div>
+          <div>
+            <h4>Communication Issues</h4>
+            <p>Lack of descriptions and visual feedback left users confused during onboarding and after making payments.</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-num">02</div>
+          <div>
+            <h4>Poor UI Elements</h4>
+            <p>The time-selection slider was imprecise and frustrating; buttons were too small for confident interaction.</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-num">03</div>
+          <div>
+            <h4>Transaction Limitations</h4>
+            <p>No refund option, no custom reload amount, and the $10 minimum actively discouraged regular use.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">05 — Ideate</p>
+      <h2>Personas, Storyboards<br>& Solutions</h2>
+      <p>We created user personas — including Terry, an 18-year-old freshman on a tight budget — to ground our thinking in real goals and frustrations. Storyboard sketches mapped the full user journey and surfaced moments where redesign could reduce friction.</p>
+      <div class="card-grid">
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Replacing the Slider</h4>
+          <p>Swapped the janky slider for distinct time-increment buttons that highlight on selection — clear, tappable, and mistake-proof.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"></div>
+          <h4>Adding a Refund Flow</h4>
+          <p>Designed a full refund request flow: choose amount → select payout method → confirm → receive confirmation with updated balance.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">06 — Prototype</p>
+      <h2>Wireframes to<br>Hi-Fi</h2>
+      <p>We started with lo-fi wireframes and a full user flowchart, then moved to a hi-fi Figma prototype. The original SpeedQueen interface was used as a baseline — we made targeted improvements rather than a full visual overhaul.</p>
+      <div class="pill-row">
+        <span class="pill">Location Selection</span>
+        <span class="pill">Homepage</span>
+        <span class="pill">Washer / Dryer Flow</span>
+        <span class="pill">Time Selection</span>
+        <span class="pill">Wallet & Refund</span>
+        <span class="pill">Settings</span>
+        <span class="pill">Promo Codes</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="video-wrap">
+    <video controls playsinline>
+      <source src="speedqueen-demo.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">07 — Test</p>
+      <h2>Usability Testing<br>Findings</h2>
+      <p>We ran in-person usability testing sessions with participants navigating the hi-fi prototype on a phone. Three categories of issues surfaced.</p>
+      <div class="finding-list">
+        <div class="finding">
+          <div class="finding-num"></div>
+          <div>
+            <h4>Navigation — Lack of Scrolling</h4>
+            <p>The prototype didn't support scroll gestures, causing users to miss below-the-fold content.</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-num"></div>
+          <div>
+            <h4>Labeling — Counterintuitive Patterns</h4>
+            <p>Some users searched the sidebar for location options; others tapped the balance expecting it to open the wallet.</p>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-num"></div>
+          <div>
+            <h4>Branding — Location Context</h4>
+            <p>After selecting Rutgers, users expected Rutgers-specific branding — a missed opportunity to build contextual trust.</p>
+          </div>
+        </div>
+      </div>
+      <div class="next-box">
+        <p class="nb-label">Next Steps</p>
+        <p>Enable scrolling and responsive gestures; make the balance a tappable shortcut to the wallet; introduce location-aware branding post-login.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="case-section">
+      <p class="section-label">08 — Reflection</p>
+      <h2>What We<br>Learned</h2>
+      <div class="reflection-grid">
+        <div class="reflection-card">
+          <h4>Key Takeaways</h4>
+          <ul>
+            <li>Interviews surfaced pain points no audit would have caught</li>
+            <li>Affinity diagramming revealed patterns across unrelated complaints</li>
+            <li>Small UI changes have outsized impact on user trust</li>
+            <li>Designs must match users' existing mental models</li>
+          </ul>
+        </div>
+        <div class="reflection-card">
+          <h4>If We Had More Time</h4>
+          <ul>
+            <li>Apple Pay / Google Pay integration</li>
+            <li>Machine favorites and usage history</li>
+            <li>Cross-campus balance transfer</li>
+            <li>Full accessibility audit</li>
+            <li>Second round of usability testing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span>Geneva Jacobson</span>
+                    <div class="footer-links">
+                      <a href="mailto:genevamjacobson@gmail.com">genevamjacobson@gmail.com</a>
+                      <a href="www.linkedin.com/in/geneva-jacobson-64617a358" target="_blank">LinkedIn</a>
+                      <a href="https://github.com/geba-geneva" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+</footer>
+</body>
+</html>

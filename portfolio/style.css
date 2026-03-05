@@ -1,0 +1,410 @@
+
+body{
+        font-family: "Kaisei Decol", serif;
+        font-weight: 200;
+        font-style: normal;
+        background-color: #FCFCF5;
+        color: black;
+        padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 12px;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.2s;
+    list-style: none;
+
+}
+nav ul{
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin-left: auto;
+    font-size: 20px;
+}
+nav a {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.2s;
+    color:black;
+}
+.nav-name a {
+    font-size: 28px;
+}
+nav a:hover {
+    opacity: 0.4;
+}
+
+.header-text{
+    margin-top: -70px;
+    font-size: 100px;
+    text-align: center;
+    font-weight:lighter;
+}
+
+.about{
+    margin-top: 10px;
+    font-weight:lighter;
+    }
+    .about h2{
+        margin-top: 0px;
+        font-weight:lighter;
+        display: block;
+        font-size: 100px;
+        margin-left: 40px;
+    }
+    .about .aboutp2{
+        font-size: 100px;
+        margin-left: 250px;
+        margin-top: -110px;
+    }
+    .about-box{
+        font-size: 18px;
+        margin-left: 430px;
+        padding: 30px;
+        margin-top: -260px;
+    }
+    .me img{
+        position: absolute;
+        display:block;
+        width: 200px;
+        border-radius: 12px;
+        margin-left: 40px;
+        margin-top: -250px;
+    }
+    .myprojects{
+        font-size: 90px;
+        font-weight: lighter;
+        display: block;
+        text-align: center;
+        margin-top: 3%;
+    }
+    .projects {
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        padding: 3rem;
+        justify-content: center;
+    }
+    
+    .project-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90px;
+        width: 300px;
+        font-family: 'Kaisei Decol', serif;
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #000;
+        transition: transform 0.2s ease;
+        border-radius: 12px;
+    }
+    .project-box:hover{
+        opacity: 0.4;
+    }
+
+    footer {
+        border-top: 1px solid black;
+        padding: 24px 0;
+        margin-top: 60px;
+      }
+      .footer-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        opacity: 0.6;
+      }
+      .footer-links {
+        display: flex;
+        gap: 24px;
+      }
+      .footer-links a {
+        text-decoration: none;
+        color: black;
+        transition: opacity 0.2s;
+      }
+      .footer-links a:hover {
+        opacity: 0.4;
+      }
+
+
+
+    /* ── CASE STUDY PAGE ── */
+
+.case-hero {
+    padding: 20px 0 60px;
+    border-bottom: 1px solid black;
+  }
+  .case-tag {
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    opacity: 0.5;
+  }
+  .case-hero h1 {
+    font-size: clamp(48px, 7vw, 90px);
+    font-weight: 200;
+    line-height: 1.1;
+    margin: 0 0 28px;
+  }
+  .case-hero p {
+    font-size: 18px;
+    max-width: 600px;
+    line-height: 1.8;
+    opacity: 0.7;
+    margin-bottom: 48px;
+  }
+  .meta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-top: 32px;
+    border-top: 1px solid black;
+  }
+  .meta-item label {
+    display: block;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.45;
+    margin-bottom: 6px;
+  }
+  .meta-item span {
+    font-size: 15px;
+  }
+  
+  .case-section {
+    padding: 72px 0;
+    border-bottom: 1px solid black;
+  }
+  .case-section:last-of-type {
+    border-bottom: none;
+  }
+  .section-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    opacity: 0.4;
+    margin-bottom: 16px;
+  }
+  .case-section h2 {
+    font-size: clamp(36px, 5vw, 64px);
+    font-weight: 200;
+    margin: 0 0 24px;
+    line-height: 1.1;
+  }
+  .case-section p {
+    font-size: 17px;
+    line-height: 1.85;
+    max-width: 640px;
+    opacity: 0.75;
+    margin-bottom: 16px;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .process-step {
+    flex: 1;
+    min-width: 140px;
+    padding: 20px 22px;
+    border-right: 1px solid black;
+  }
+  .process-step:last-child {
+    border-right: none;
+  }
+  .ps-num {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    opacity: 0.4;
+    margin-bottom: 8px;
+  }
+  .ps-title {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .ps-desc {
+    font-size: 13px;
+    opacity: 0.55;
+    line-height: 1.5;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 40px;
+  }
+  .card {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px 26px;
+  }
+  .card-icon {
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+  .card h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+  .card p {
+    font-size: 14px;
+    opacity: 0.6;
+    line-height: 1.65;
+    margin: 0;
+  }
+  
+  .quotes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 36px;
+  }
+  .quote {
+    border-left: 2px solid black;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-style: italic;
+    opacity: 0.65;
+    line-height: 1.7;
+  }
+  
+  .finding-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 36px;
+  }
+  .finding {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 20px 24px;
+  }
+  .finding-num {
+    font-size: 13px;
+    opacity: 0.35;
+    letter-spacing: 0.06em;
+    flex-shrink: 0;
+    padding-top: 2px;
+    min-width: 28px;
+  }
+  .finding h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 6px;
+  }
+  .finding p {
+    font-size: 14px;
+    opacity: 0.6;
+    line-height: 1.65;
+    margin: 0;
+  }
+  
+  .pill-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px;
+  }
+  .pill {
+    font-size: 13px;
+    border: 1px solid black;
+    border-radius: 999px;
+    padding: 5px 16px;
+    opacity: 0.7;
+  }
+
+  .video-wrap {
+    margin-top: 36px;
+    border-radius: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: none;
+  }
+  .video-wrap video,
+  .video-wrap iframe {
+    display: block;
+    width: 50%;
+    aspect-ratio: 16 / 9;
+    border: none;
+  }
+  
+  .next-box {
+    margin-top: 28px;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px 28px;
+  }
+  .nb-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    opacity: 0.4;
+    margin-bottom: 10px !important;
+  }
+  
+  .reflection-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 36px;
+  }
+  .reflection-card {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px 26px;
+  }
+  .reflection-card h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    opacity: 0.45;
+    font-weight: 400;
+    margin-bottom: 16px;
+  }
+  .reflection-card ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  .reflection-card ul li {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.75;
+    padding-left: 16px;
+    position: relative;
+  }
+  .reflection-card ul li::before {
+    content: '–';
+    position: absolute;
+    left: 0;
+    opacity: 0.4;
+  }
+  
+  @media (max-width: 700px) {
+    .process-steps { flex-direction: column; }
+    .process-step { border-right: none; border-bottom: 1px solid black; }
+    .process-step:last-child { border-bottom: none; }
+    .reflection-grid { grid-template-columns: 1fr; }
+  }
