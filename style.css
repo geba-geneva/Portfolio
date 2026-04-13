@@ -1,138 +1,208 @@
-
-body{
-        font-family: "Kaisei Decol", serif;
-        font-weight: 200;
-        font-style: normal;
-        background-color: #FCFCF5;
-        color: black;
-        padding: 10px 10%;
+html {
+  scroll-behavior: smooth;
 }
+body{
+  font-family: "Kaisei Decol", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #3a4445;
+
+}
+/* landing pagge */
 nav{
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    padding: 12px;
-    text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: 0.2s;
-    list-style: none;
+display: flex;
+align-items: center;
+border-bottom: 1px solid #3a4445;
+text-decoration: none;
+padding: 6px 12px;
+transition: 0.2s;
+list-style: none;
+background-color: #874463;
 
 }
 nav ul{
-    display: flex;
-    gap: 24px;
-    list-style: none;
-    margin-left: auto;
-    font-size: 20px;
+display: flex;
+gap: 24px;
+list-style: none;
+margin-left: auto;
+font-size: 20px;
 }
 nav a {
-    text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    transition: 0.2s;
-    color:black;
+text-decoration: none;
+padding: 6px 12px;
+border-radius: 6px;
+transition: 0.2s;
+color: white;
 }
 .nav-name a {
-    font-size: 28px;
+font-size: 28px;
 }
 nav a:hover {
-    opacity: 0.4;
+opacity: 0.4;
 }
 
-.header-text{
-    margin-top: -70px;
-    font-size: 100px;
-    text-align: center;
-    font-weight:lighter;
+.cover {
+  display: flex;
+  height: 83vh;
+  position: relative;
+  border-bottom: 1px solid black;
+}
+h1 {
+  font-size: 15vw;
+  margin: 0;
+}
+.text {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* move to top */
+  padding-top: 150px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.about{
-    margin-top: 10px;
-    font-weight:lighter;
-    }
-    .about h2{
-        margin-top: 0px;
-        font-weight:lighter;
-        display: block;
-        font-size: 100px;
-        margin-left: 40px;
-    }
-    .about .aboutp2{
-        font-size: 100px;
-        margin-left: 250px;
-        margin-top: -110px;
-    }
-    .about-box{
-        font-size: 18px;
-        margin-left: 430px;
-        padding: 30px;
-        margin-top: -260px;
-    }
-    .me img{
-        position: absolute;
-        display:block;
-        width: 200px;
-        border-radius: 12px;
-        margin-left: 40px;
-        margin-top: -250px;
-    }
-    .myprojects{
-        font-size: 90px;
-        font-weight: lighter;
-        display: block;
-        text-align: center;
-        margin-top: 3%;
-    }
-    .projects {
-        display: flex;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-        padding: 3rem;
-        justify-content: center;
-    }
-    
-    .project-box {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 90px;
-        width: 300px;
-        font-family: 'Kaisei Decol', serif;
-        text-decoration: none;
-        color: #000;
-        border: 1px solid #000;
-        transition: transform 0.2s ease;
-        border-radius: 12px;
-    }
-    .project-box:hover{
-        opacity: 0.4;
-    }
+.small{
+  font-size: 3vw;
+}
 
-    footer {
-        border-top: 1px solid black;
-        padding: 24px 0;
-        margin-top: 60px;
-      }
-      .footer-inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 14px;
-        opacity: 0.6;
-      }
-      .footer-links {
-        display: flex;
-        gap: 24px;
-      }
-      .footer-links a {
-        text-decoration: none;
-        color: black;
-        transition: opacity 0.2s;
-      }
-      .footer-links a:hover {
-        opacity: 0.4;
-      }
+.image {
+  position: absolute;   /* place it inside .cover */
+  right: 100;
+  top: 0;
+
+  width: 35%;           /* controls how wide */
+  height: 100%;         /* makes it tall */
+
+  background-image: url("flower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  z-index: 1;
+}
+
+
+
+
+
+/* about */
+.about {
+  border-bottom: 1px solid black;
+  padding: 60px 0px;
+}
+
+/* Flex container for image + text */
+.about-container {
+  display: flex;
+  align-items: center; /* vertically centers text with image */
+  gap: 40px;           /* space between image and text */
+  flex-wrap: wrap;      /* allows stacking on small screens */
+}
+
+/* Image styling */
+.about-image img {
+  max-width: 400px;  /* controls image size */
+  width: 100%;
+  height: auto;      /* keeps proportions */
+}
+
+/* Text styling */
+.about-text {
+  flex: 1; /* takes remaining space */
+}
+
+
+
+
+
+/* Courses section */
+.relatedcourses {
+  padding-top: 60px;
+  text-align: center;
+}
+
+/* Grid of course boxes */
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;       /* allows wrapping on smaller screens */
+  justify-content: center;
+  gap: 30px;             /* space between boxes */
+  margin-top: 40px;
+  padding-bottom: 60px;
+}
+
+/* Each course box */
+.course-box {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid black;
+  width: 150px;          /* fixed width for uniform boxes */
+  text-align: left;
+}
+
+
+
+.myprojects{
+  border-top: 1px solid black;
+  padding: 60px 0px;
+  display: block;
+  text-align: center;
+  margin-top: 3%;
+}
+.projects {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 3rem;
+  justify-content: center;
+}
+
+.project-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+  width: 300px;
+  font-family: 'Kaisei Decol', serif;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #000;
+  transition: transform 0.2s ease;
+  border-radius: 12px;
+}
+.project-box:hover{
+  opacity: 0.4;
+}
+
+/* footer */
+
+.container{
+  padding: 60px 60px; /* keep content aligned */
+  margin-left: -60px;
+  margin-right: -60px;
+  border-top: 1px solid black;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.footer-links {
+  display: flex;
+  gap: 24px;
+}
+.footer-links a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+  color: #3a4445;
+}
+.footer-links a:hover {
+  opacity: 0.4;
+}
+
 
 
 
